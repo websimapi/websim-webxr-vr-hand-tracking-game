@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WebXR VR Hand Tracking Game</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="info">
+			WebXR VR Hand Tracking Game<br/>
+			<span style="font-size: 0.8em;">Enable hand tracking in your browser's flags (e.g., #webxr-hands on Quest Browser)</span>
+		</div>
+		<div id="container"></div>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.module.min.js",
+					"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.168.0/examples/jsm/",
+					"cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js",
+					"./modules/VRButton.js": "./modules/VRButton.js"
+				}
+			}
+		</script>
+		<script type="module" src="main.js"></script>
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
